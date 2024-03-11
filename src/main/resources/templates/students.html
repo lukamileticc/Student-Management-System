@@ -13,20 +13,24 @@
 		<div class = "row">
 			<h1> List Students</h1>
 		</div>
-		<table class="table table-success table-striped"></table>
-			<thread class = "table-dark">
+		<table class="table table-success table-striped table-bordered">
+			<thead >
 				<tr>
 					<th> Student's first name </th>
 					<th> Student's last name </th>
 					<th> Student's email address </th>
 					<th> Actions </th>
 				</tr>
-			</thread>
+			</thead>
+			
 			<tbody>
 				<tr th:each = "student: ${students}">
-					<td th:text = "${student.getFirst_name()}">
+					<td th:text = "${student.first_name}"></td>
+					<td th:text = "${student.last_name}"></td>
+					<td th:text = "${student.email}"></td>
 				</tr>
 			</tbody>
+		</table>
 	</div>
 </body>
 </html>
