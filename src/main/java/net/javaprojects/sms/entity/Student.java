@@ -27,7 +27,6 @@ public class Student {
 	
 	//default constructor
 	public Student() {
-		
 	}
 	
 	public Student(String first_name, String last_name, String email) {
