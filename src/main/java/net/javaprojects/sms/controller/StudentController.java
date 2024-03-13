@@ -73,6 +73,16 @@ public class StudentController {
 		student_service.updateStudent(existing_student);
 		return "redirect:/students";
 	}
+	
+	
+	//handler method to delete student from view and from database
+	@GetMapping("/students/delete/{id}")
+	public String deleteStudent(@PathVariable Long id)
+	{	
+		Student existing_student = student_service.getStudentById(id);
+		student_service.deleteStudent(existing_student);
+		return "redirect:/students";
+	}
 
 	
 }
