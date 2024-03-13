@@ -58,6 +58,10 @@
 					<td th:text = "${student.first_name}"></td>
 					<td th:text = "${student.last_name}"></td>
 					<td th:text = "${student.email}"></td>
+					<td>
+						<a th:href = "@{/students/edit/{id}(id=${student.id})}"
+						class = "btn btn-primary">Update</a>
+					</td>
 				</tr>
 			</tbody>
 		</table>

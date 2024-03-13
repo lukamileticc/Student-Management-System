@@ -11,7 +11,6 @@ import net.javaprojects.sms.service.StudentService;
 @Service
 public class StudentServiceImpl implements StudentService{
 
-	
 	private StudentRepository student_repository;
 	
 	public StudentServiceImpl(StudentRepository student_repository) {
@@ -29,5 +28,15 @@ public class StudentServiceImpl implements StudentService{
 		return student_repository.save(student);
 	}
 	
+	@Override
+	public Student getStudentById(Long id) {
+		return student_repository.findById(id).get();
+	}
+
+	@Override
+	public Student updateStudent(Student student) {
+		
+		return student_repository.save(student);
+	}
 	
 }
