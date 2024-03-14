@@ -21,6 +21,11 @@ U terminalu:
 $ git clone https://github.com/lukamileticc/Student-Management-System.git
 ```
 Zatim je potrebne preuzeti [Spring tool suite(STS 4)](https://vpsie.com/knowledge-base/how-to-install-spring-tool-suitests-4-in-ubuntu/)
+
+Konfigurisati java runtime enviroment(jre): JavaSE-17(jre)
+```
+run-> run configurations -> jre tab -> select jre
+```
 Otvoriti STS4 i otvoriti preuzeti direktorijum kao projekat:
 ```
 file -> open file ->select directory
